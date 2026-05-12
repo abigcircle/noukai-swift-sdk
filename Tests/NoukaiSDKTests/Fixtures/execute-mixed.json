@@ -1,0 +1,29 @@
+{
+    "status": "tool_calls_required",
+    "executionId": "exec_mix",
+    "pausedAtStep": "step_1",
+    "iterationsUsed": 1,
+    "toolCallMessages": [
+        {
+            "role": "user",
+            "content": "close task #5"
+        },
+        {
+            "role": "assistant",
+            "content": "I'll close task #5 for you.",
+            "tool_calls": [
+                {
+                    "id": "call_abc",
+                    "type": "function",
+                    "function": {
+                        "name": "close_task",
+                        "arguments": "{\"id\":\"t_5\"}"
+                    }
+                }
+            ]
+        }
+    ],
+    "accumulatedOutputs": {},
+    "flowId": "flow_mix",
+    "blockCount": 2
+}

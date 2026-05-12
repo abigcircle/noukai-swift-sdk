@@ -1,0 +1,29 @@
+{
+    "status": "tool_calls_required",
+    "executionId": "exec_abc",
+    "pausedAtStep": "step_2",
+    "iterationsUsed": 1,
+    "toolCallMessages": [
+        {
+            "role": "user",
+            "content": "find billing tasks"
+        },
+        {
+            "role": "assistant",
+            "content": "I'll look up those tasks.",
+            "tool_calls": [
+                {
+                    "id": "call_1",
+                    "type": "function",
+                    "function": {
+                        "name": "search_tasks",
+                        "arguments": "{\"query\":\"billing\"}"
+                    }
+                }
+            ]
+        }
+    ],
+    "accumulatedOutputs": null,
+    "flowId": "flow_456",
+    "blockCount": 2
+}
